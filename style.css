@@ -1,10 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
 :root {
     --white: #FFFFFF;
     --bc-color: #1B1D1A;
@@ -14,22 +7,14 @@
 }
 
 body {
-    background-color: var(--bc-color);
     font-family: 'roboto mono', monospace;
 }
 
 /* header */
 
 header {
-    margin: 50px 40px;
-    display: flex;
-    justify-content: space-around;
+    background-color: var(--bc-color);
     color: var(--text);
-}
-
-h4 {
-    font-size: 18px;
-    cursor: pointer; 
 }
 
 h4:hover {
@@ -40,37 +25,23 @@ h4:hover {
 /* home */
 
 h1 {
-    font-size: 200px;
     font-family: 'inter', sans-serif;
+    font-weight: bold;
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--white);
 }
 
 h2 {
-    font-size: 40px;
     color: var(--text);
 }
 
 .home {
-    padding: 60px 40px;
-    height: 65vh;
-    font-weight: 600;
-}
-
-.home-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-top: 40px;
+    background-color: var(--bc-color);
+    height: 80vh;
 }
 
 .icons {
-    padding-top: 20px;
-    display: flex;
-    gap: 40px;
-    color: var(--text);
-    align-items: center;
     height: 70px;
 }
 
