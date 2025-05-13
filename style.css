@@ -17,11 +17,6 @@ header {
     color: var(--text);
 }
 
-h4:hover {
-    color: var(--hover);
-    transition: all 0.4s ease;
-}
-
 /* home */
 
 h1 {
@@ -79,14 +74,8 @@ h2 {
 
 /* projetos */
 
-h3 {
-    font-size: 25px;
-    color: var(--text);
-}
-
 .projetos {
     background-color: var(--bc-color2);
-    padding: 40px;
 }
 
 /* sobre mim */
