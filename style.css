@@ -86,51 +86,13 @@ h3 {
 
 .projetos {
     background-color: var(--bc-color2);
-    height: 80vh;
     padding: 40px;
-}
-.carousel{
-    width: 700px;
-}
-
-.carousel img{ /* deixar so para a primeira img */
-    padding: 0 90px 20px 90px;
-}
-
-.carousel button{
-    color: aqua;      
-}
-
-.projeto-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.info-projeto {
-    display: flex;
-    flex-direction: column;
-}
-
-.info-projeto info{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    padding: 0;
-
-}
-
-.carousel span{
-    padding-left: 90px;
-    color: var(--text);
-    font-weight: bold;
 }
 
 /* sobre mim */
 
 .sobremim {
     background-color: var(--bc-color);
-    height: 70vh;
 }
 
 /* transição */
@@ -145,7 +107,6 @@ h3 {
 
 .contato {
     background-color: var(--bc-color2);
-    height: 40vh;
 }
 
 /* footer */
