@@ -13,8 +13,8 @@ body {
 /* header */
 
 header {
-    background-color: var(--bc-color);
     color: var(--text);
+    background-color: var(--bc-color);
 }
 
 /* home */
@@ -33,7 +33,6 @@ h2 {
 
 .home {
     background-color: var(--bc-color);
-    height: 80vh;
 }
 
 .icons {
@@ -42,7 +41,7 @@ h2 {
 
 .icons a img {
     width: 40px;
-    transition: transform 0.3s, filter 0.3s;
+    transition: transform 0.3s;
 }
 
 .icons a:hover img {
@@ -50,13 +49,12 @@ h2 {
     filter: brightness(1.5) saturate(1.5);
 }
 
-.decoration{
-    transition:  transform 2s ease, filter 0.9s ease;
+.decoration {
+    background-color: var(--bc-color2);
 }
 
-.decoration:hover{
-    transition: all 0.4s ease;
-    width: 500px;
+.decoration2 {
+    background-color: var(--bc-color);
 }
 
 /* projetos */

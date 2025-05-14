@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Portifólio</title>
+    <title>Júlia Martins</title>
 </head>
 <body>
-    <header class="text-green-200 p-10 flex justify-around text-xl font-mono">
-        <h4 class="cursor-pointer hover:text-green-200 transition duration-300">Home</h4>
-        <h4 class="cursor-pointer hover:text-green-200 transition duration-300">Projetos</h4>
-        <h4 class="cursor-pointer hover:text-green-200 transition duration-300">Sobre mim</h4>
-        <h4 class="cursor-pointer hover:text-green-200 transition duration-300">Contato</h4>
+    <header class="text-green-200 p-5 flex justify-around text-xl fixed left-0 right-0 z-50 rounded-b-[70px]">
+        <a href="#home" class="cursor-pointer hover:text-green-200 transition duration-300">Home</a>
+        <a href="#projetos" class="cursor-pointer hover:text-green-200 transition duration-300">Projetos</a>
+        <a href="#sobre" class="cursor-pointer hover:text-green-200 transition duration-300">Sobre mim</a>
+        <a href="#contato" class="cursor-pointer hover:text-green-200 transition duration-300">Contato</a>
     </header>
-    <div class="home block justify-end items-center p-10">
+    <div id="home" class="home block justify-end items-center p-10 pt-35 bg-fundo1">
         <div class="flex flex-col items-end">
             <h1 class="text-[250px]">Juh MM</h1>
             <h2 class="text-4xl">web designer & front-end</h2>
             <div class="icons flex items-center gap-5 pt-[20px]">
                 <a href="https://github.com/Juh-MM"><img src="icons/github.svg" alt="github"></a>
                 <a href="https://www.linkedin.com/in/j%C3%BAlia-martins-monteiro-1b3306305/"><img src="icons/linkedin.svg" alt="linkedin"></a>
-                <a href=""><img src="icons/email.svg" alt="email"></a>
-                <a href=""><img src="icons/instagram.svg" alt="instagram"></a>
+                <a href="mailto:juliamamonteiro02@gmail.com"><img src="icons/email.svg" alt="email"></a>
+                <a href="https://www.instagram.com/julia_mm_2/"><img src="icons/instagram.svg" alt="instagram"></a>
             </div>
         </div>
-        <div class=" flex flex-row decoration w-2xs h-30 rounded-full bg-green-200"></div>
+        <div class="group">
+            <div class="decoration w-2xs h-30 rounded-full bg-green-200 transition-[transform,filter] duration-[2000ms] ease-in-out group-hover:transition-all group-hover:duration-400 group-hover:w-[500px]">
+        </div>
+        </div>
     </div>
 
     <svg class="curva" viewBox="0 0 900 80" preserveAspectRatio="none" style="transform: scaleX(-1);">
@@ -41,11 +44,53 @@
         fill="#2E372E"/>
     </svg>
 
-    <div class="projetos p-10">
-        <h3 class="text-xl font-mono text-white">Projetos</h3>
-        <section class="pt-5 grid grid-cols-3 gap-8">
-            <div class="">
-                <img class="rounded-[10px]" src="ominiman.jpg" alt="">
+    <div id="projetos" class="projetos p-10">
+        <h3 class="text-2xl text-white"><strong>Projetos</strong></h3>
+        <section class="pt-10 grid grid-cols-3 gap-8">
+            <div>
+                <img class="rounded-[10px]" src="img/2025-05-14 (3).png" alt="">
+                <div class="pt-3 flex flex-col gap-3">
+                    <div class="flex flex-row justify-between">
+                        <div class="flex flex-col">
+                            <a class="text-white text-xl underline cursor-pointer" href="https://pincat.netlify.app/"><strong>PinCat</strong></a>
+                            <span class="text-green-200 text-lg">web site</span>
+                        </div>
+                        <div class="flex flex-row gap-2 py-4">
+                            <img src="icons/html.svg" alt="">
+                            <img src="icons/css.svg" alt="">
+                            <img src="icons/js.svg" alt="">
+                            <img src="icons/node.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-white text-justify">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has not only five </p>
+                    </div>
+                    <div class="flex justify-end">
+                        <a href="https://github.com/Juh-MM/PinCat"><img src="icons/github2.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img class="rounded-[10px]" src="img/2025-05-14 (4).png" alt="">
+                <div class="pt-3 flex flex-col gap-3">
+                    <div class="flex flex-row justify-between">
+                        <div class="flex flex-col">
+                            <a class="text-white text-xl underline cursor-pointer" href="https://raissabispo.github.io/Salao-Senac/"><strong>Salão senac</strong></a>
+                            <span class="text-green-200 text-lg">web site</span>
+                        </div>
+                        <div class="flex flex-row gap-2 py-4">
+                            <img src="icons/html.svg" alt="">
+                            <img src="icons/css.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-white text-justify">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has not only five </p>
+                    </div>
+                    <div class="flex justify-end">
+                        <a href="https://github.com/Juh-MM/Salao-Senac"><img src="icons/github2.svg" alt=""></a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -55,21 +100,21 @@
 
     </div>
     
-    <div class="sobremim-fundo">
-
+    <div id="sobre" class="sobremim-fundo">
         <div class="sobremim p-10 rounded-tr-[80px] ">
+            <div class="grid grid-cols-2">
+                <div class="w-md py-5 flex flex-col gap-[-5px]">
+                    <div class="flex flex-row decoration w-2xs h-30 rounded-full -translate-x-1/2"></div>
 
-            <div class="sobremim-content grid grid-cols-2">
-            <div class="w-md py-5">
-                <div class=" flex flex-row decoration w-2xs h-30 rounded-full bg-green-200"></div>
-
-                <img src="Group 4.png" alt="">
+                    <img src="img/Group 4.png" alt="">
+                </div>
+                <div class="flex flex-col items-end justify-center text-white">
+                    <h3 class="text-2xl">Sobre mim</h3>
+                    <p class="pt-10 text-justify">&nbsp;&nbsp;Olá! Meu nome é Júlia Martins, sou apaixonada por design e desenvolvimento web, áreas onde consigo unir criatividade, estética e funcionalidade para transformar ideias em soluções digitais eficientes, sempre focando na melhor experiência para o usuário. Atualmente, estou cursando <strong>Análise e Desenvolvimento de Sistemas (ADS) e Design</strong>.</p>
+                    <p class="text-justify">&nbsp;&nbsp;Tenho experiência com tecnologias como <strong>React, Tailwind CSS, JavaScript, Node.js, CSS3, HTML5 e Figma</strong>.
+                    Se você gostou do meu trabalho ou tem alguma ideia para tirar do papel, ficarei muito feliz em conversar. Entre em contato e vamos construir algo incrível juntos!</p>
+                </div>           
             </div>
-            <div class="flex flex-col items-end justify-center text-white">
-                <h3 class="text-xl font-mono">Sobre mim</h3>
-                <p class="p-10">Olá! Meu nome é Júlia Martins e sou uma apaixonada por <strong>design e desenvolvimento web</strong>, atualmente estou cursando ads e design. Trabalho com tecnologias como <strong>React, Tailwind css, Javascript, Node.js, css 3, html 5 e Figma</strong>. Gostou do meu trabalho? Entre em contato!</p>
-            </div>           
-        </div>
         </div>       
     </div>
 
@@ -86,19 +131,19 @@
         fill="#2E372E"/>
     </svg>
 
-    <div class="contato p-10 text-white">
-        <h3 class="text-xl font-mono">Contato</h3>
+    <div id="contato" class="contato p-10 text-white">
+        <h3 class="text-2xl">Contato</h3>
         <div class="icons flex flex-row items-center justify-center gap-5 pt-[20px]">
-            <a href=""><img src="icons/github.svg" alt="github"></a>
-            <a href=""><img src="icons/linkedin.svg" alt="linkedin"></a>
-            <a href=""><img src="icons/email.svg" alt="email"></a>
-            <a href=""><img src="icons/instagram.svg" alt="instagram"></a>
-            <button class="border-2 border-green-200 rounded-full text-green-200 px-5 py-2 hover:bg-green-200 hover:text-black transition duration-300">
-                baixe meu currículo
-            </button>
+            <a href="https://github.com/Juh-MM"><img src="icons/github.svg" alt="github"></a>
+            <a href="https://www.linkedin.com/in/j%C3%BAlia-martins-monteiro-1b3306305/"><img src="icons/linkedin.svg" alt="linkedin"></a>
+            <a href="mailto:juliamamonteiro02@gmail.com"><img src="icons/email.svg" alt="email"></a>
+            <a href="https://www.instagram.com/julia_mm_2/"><img src="icons/instagram.svg" alt="instagram"></a>
+            <a href="curriculo_JuliaMartins.pdf" class="border-2 border-green-200 rounded-full text-green-200 px-5 py-2 hover:bg-green-200 hover:text-black transition duration-300 cursor-pointer" download>baixe meu currículo</a>
         </div>
-        <div class=" flex flex-row decoration w-2xs h-30 rounded-full bg-green-200"></div>
-        <div class="pt-20 text-ml flex flex-col">
+        <div class="flex flex-row justify-end py-5">
+            <div class="flex flex-row decoration2 w-2xs h-30 rounded-full"></div>
+        </div>
+        <div class="text-ml flex flex-col">
             <span>©2025 por Júlia Martins.</span>
             <span>Todos os direitos reservados.</span>
         </div>
