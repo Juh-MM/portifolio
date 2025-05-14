@@ -13,13 +13,8 @@ body {
 /* header */
 
 header {
-    background-color: var(--bc-color);
     color: var(--text);
-}
-
-h4:hover {
-    color: var(--hover);
-    transition: all 0.4s ease;
+    background-color: var(--bc-color);
 }
 
 /* home */
@@ -38,7 +33,6 @@ h2 {
 
 .home {
     background-color: var(--bc-color);
-    height: 80vh;
 }
 
 .icons {
@@ -47,7 +41,7 @@ h2 {
 
 .icons a img {
     width: 40px;
-    transition: transform 0.3s, filter 0.3s;
+    transition: transform 0.3s;
 }
 
 .icons a:hover img {
@@ -55,58 +49,31 @@ h2 {
     filter: brightness(1.5) saturate(1.5);
 }
 
-.decoration{
-    display: flex;
-    width: 280px;
-    height: 140px;
-    border-radius: 70px;
+.decoration {
     background-color: var(--bc-color2);
-    transition:  transform 2s ease, filter 0.9s ease;
 }
 
-.decoration:hover{
-    transition: all 0.4s ease;
-    width: 500px;
-}
-
-/* transição */
-
-.curva1 svg {
-    display: block;
-    width: 100%;
-    height: 150px;
+.decoration2 {
+    background-color: var(--bc-color);
 }
 
 /* projetos */
 
-h3 {
-    font-size: 25px;
-    color: var(--text);
-}
-
 .projetos {
     background-color: var(--bc-color2);
-    padding: 40px;
 }
 
 /* sobre mim */
 
+.sobremim-fundo {
+    background-color: var(--bc-color2);
+}
+
 .sobremim {
     background-color: var(--bc-color);
 }
-
-/* transição */
-
-.curva3 svg {
-    display: block;
-    width: 100%;
-    height: 150px;
-}
-
 /* contato */
 
 .contato {
     background-color: var(--bc-color2);
 }
-
-/* footer */
