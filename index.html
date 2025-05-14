@@ -25,23 +25,22 @@
                 <a href=""><img src="icons/instagram.svg" alt="instagram"></a>
             </div>
         </div>
-        <div class="decoration"></div>
+        <div class=" flex flex-row decoration w-2xs h-30 rounded-full bg-green-200"></div>
     </div>
 
-    <div class="curva1">
-        <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
-            <path fill=#2E372E d="
-            M0,75
-            H480
-            C630,75 630,0 720,0
-            C840,0 0,0 960,0
-            H1440
-            V150
-            H0
-            Z
-        " />
-        </svg>
-    </div> 
+    <svg class="curva" viewBox="0 0 900 80" preserveAspectRatio="none" style="transform: scaleX(-1);">
+        <rect width="900" height="100" fill="#1B1D1A" />
+        <path d="
+            M0, 0 
+            H370 
+            C480,-10 420,70 480,80 
+            H900 
+            V120 
+            H0 
+            Z" 
+        fill="#2E372E"/>
+    </svg>
+
     <div class="projetos p-10">
         <h3 class="text-xl font-mono text-white">Projetos</h3>
         <section class="pt-5 grid grid-cols-3 gap-8">
@@ -64,20 +63,44 @@
                 <img src="ominiman.jpg" alt="">
             </div>
         </section>
+
+        <div class="flex flex-row justify-center pt-3">
+            <span class="text-white text-5xl">...</span>
+        </div>
+
     </div>
     
-    <div class="sobremim p-10 rounded-tr-[90px]">
-        <div class="sobremim-content grid grid-cols-2">
+    <div class="sobremim-fundo">
+
+        <div class="sobremim p-10 rounded-tr-[80px] ">
+
+            <div class="sobremim-content grid grid-cols-2">
             <div class="w-md py-5">
+                <div class=" flex flex-row decoration w-2xs h-30 rounded-full bg-green-200"></div>
+
                 <img src="Group 4.png" alt="">
             </div>
             <div class="flex flex-col items-end justify-center text-white">
                 <h3 class="text-xl font-mono">Sobre mim</h3>
                 <p class="p-10">Olá! Meu nome é Júlia Martins e sou uma apaixonada por <strong>design e desenvolvimento web</strong>, atualmente estou cursando ads e design. Trabalho com tecnologias como <strong>React, Tailwind css, Javascript, Node.js, css 3, html 5 e Figma</strong>. Gostou do meu trabalho? Entre em contato!</p>
-            </div>
-            
+            </div>           
         </div>
+        </div>       
     </div>
+
+    <svg class="curva" viewBox="0 0 900 80" preserveAspectRatio="none" style="transform: scaleX(-1);">
+        <rect width="900" height="100" fill="#1B1D1A" />
+        <path d="
+            M0, 0 
+            H370 
+            C480,-10 420,70 480,80 
+            H900 
+            V120 
+            H0 
+            Z" 
+        fill="#2E372E"/>
+    </svg>
+
     <div class="contato p-10 text-white">
         <h3 class="text-xl font-mono">Contato</h3>
         <div class="icons flex flex-row items-center justify-center gap-5 pt-[20px]">
@@ -89,7 +112,7 @@
                 baixe meu currículo
             </button>
         </div>
-        <div class="pt-15 text-ml flex flex-col">
+        <div class="pt-20 text-ml flex flex-col">
             <span>©2025 por Júlia Martins.</span>
             <span>Todos os direitos reservados.</span>
         </div>
